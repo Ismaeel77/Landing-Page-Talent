@@ -1,0 +1,198 @@
+.main-btn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.main-btn:active,
+.main-btn:hover {
+  outline: 0;
+}
+
+.main-btn span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.main-btn:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .main-btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  color: rgba(0, 221, 235, 0.5);
+  background-color: hotpink;
+}
+
+::selection {
+  color: rgba(0, 221, 235, 0.5);
+  background-color: hotpink;
+}
+
+body {
+  background-image: linear-gradient(135deg, #254c72 20%, #5B42F3 50%, #00DDEB);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  pointer-events: none;
+  box-shadow: 0 0 20px #FFF, 0 0 60px #FFF, 0 0 100px #FFF;
+  z-index: 999;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: colors 5s infinite;
+}
+div.cursor::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #00DDEB;
+  position: absolute;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+header nav:nth-child(1) .logo {
+  cursor: pointer;
+}
+header nav:nth-child(1) .logo p:nth-child(1) {
+  top: -40px;
+  left: 0;
+}
+header nav:nth-child(1) .logo p:nth-child(1) span {
+  color: #00DDEB;
+}
+header nav:nth-child(1) .logo p:nth-child(2) {
+  top: -30px;
+  left: 0;
+}
+header nav:nth-child(1) .logo p:nth-child(2) span {
+  color: #00DDEB;
+}
+header nav:nth-child(1) ul #marker {
+  height: 3px;
+  width: 0;
+  left: 17;
+  bottom: 5px;
+  background-image: linear-gradient(45deg, black 40%, #00DDEB);
+  transition: 0.5s;
+  border-radius: 4px;
+}
+header nav:nth-child(2) svg {
+  transition: 0.3s;
+}
+header nav:nth-child(2) svg:hover {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+section.landing #textsection h1 {
+  color: #f3ff36;
+  font-size: 3.5rem;
+}
+section.landing #textsection p {
+  color: white;
+}
+section.landing #textsection .participants span {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #254c72;
+}
+section.landing #textsection .participants span:not(:first-of-type) {
+  margin-left: -15px;
+}
+section.landing #textsection .participants span:nth-of-type(1) {
+  background-color: #00DDEB;
+}
+section.landing #textsection .participants span:nth-of-type(2) {
+  background-color: #00DDEB;
+  z-index: 9;
+}
+section.landing #textsection .participants span:nth-of-type(3) {
+  z-index: 10;
+  background-color: #f3ff36;
+}
+section.landing #infosection .img-holder {
+  padding: 20px;
+  border: 2px solid #f3ff36;
+  border-radius: 250px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section.landing #infosection .img-holder h5 {
+  z-index: 999;
+  bottom: 70px;
+  left: -70px;
+  color: #f3ff36;
+}
+section.landing #infosection .img-holder img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 250px;
+}
+section.landing #infosection .info h2 {
+  color: #f3ff36;
+}
+
+footer .copyright {
+  background: -webkit-linear-gradient(90deg, #00DDEB, #f3ff36);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=main.css.map */
